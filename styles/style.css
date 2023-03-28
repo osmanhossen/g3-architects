@@ -258,4 +258,44 @@ media quaries
 }
 /* tablet device */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
+  .header,
+  .container,
+  .nav_area,
+  .banner_area {
+    width: 100%;
+  }
+  .nav-item {
+    display: flex;
+  }
+  .banner_area img,
+  .exprience,
+  .exprience-item,
+  .exprience-thumbneil img,
+  .footer {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+  }
+  .nav_area,
+  .our_features_team,
+  .reward-item {
+    flex-direction: column;
+  }
+  .our_features_team {
+    padding: 0;
+  }
+
+  .exprience_area {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .exprience_details,
+  .sponser_item,
+  .reward-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .reward,
+  .sponser {
+    margin-top: 30px;
+  }
 }
